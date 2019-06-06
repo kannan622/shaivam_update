@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/database_update"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search_site"
+            android:icon="@drawable/ic_search"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/nav_my_favorites"
+            android:icon="@drawable/ic_nav_favourite_red"
+            android:title="@string/fav" />
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/ic_nav_ratings_red"
+            android:title="@string/rating" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/action_share" />
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/ic_nav_language_red"
+            android:title="@string/lang" />
+        <item
+            android:id="@+id/nav_keyboard"
+            android:icon="@drawable/ic_nav_keyboard_red"
+            android:title="@string/tamilkey" />
+        <item
+            android:id="@+id/nav_database_update"
+            android:icon="@drawable/ic_nav_database_update"
+            android:title="@string/nav_database_update" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_nav_contact_us_red"
+            android:title="@string/contactus" />
+        <item
+            android:id="@+id/nav_about_app"
+            android:icon="@drawable/ic_nav_about_app_red"
+            android:title="@string/About" />
+        <item
+            android:id="@+id/nav_shaivam"
+            android:icon="@drawable/ic_nav_shaivam_red"
+            android:title="@string/home" />
+    </group>
+</menu>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SixTimePoojaDetailActivity">
+
+    <org.shaivam.utils.MyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/six_pooja_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:background="@drawable/background_tirumurai"
+                android:paddingLeft="@dimen/_8sdp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/six_pooja_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_six_pooja"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/six_pooja_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/ushat"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/six_pooja_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/play_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/ic_shaivam_fm_play"
+                    android:backgroundTint="@color/Yellow"
+                    android:contentDescription="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/pooja_text_hindi_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/background_song_details"
+                android:elevation="@dimen/_2sdp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/six_pooja_linear">
+
+                <TextView
+                    android:id="@+id/pooja_text_hindi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/saya_tamil"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/pooja_text_hindi_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="@dimen/_8sdp"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pooja_text_hindi_linear_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/background_song_details"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintBottom_toTopOf="@+id/pooja_text_tamil_linear"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/six_pooja_linear">
+
+                <ImageView
+                    android:id="@+id/pooja_text_hindi_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_sixkalapuja_sayaraksha"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pooja_text_tamil_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/background_song_details"
+                android:elevation="@dimen/_2sdp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/pooja_text_hindi_linear">
+
+                <TextView
+                    android:id="@+id/pooja_text_tamil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/pooja_text_tamil_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="@dimen/_8sdp"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@style/TextAppearance.FontPath"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </org.shaivam.utils.MyNestedScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:visibility="gone"
+        android:src="@drawable/radio_background"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

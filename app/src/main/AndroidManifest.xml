@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.shaivam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission
+        android:name="info.iopex.adams.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:theme">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.TirumuraiActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TempleActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RadioActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EventsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.SixTimePoojaActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ThirumuraiListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ThirumuraiSongsListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ThirumuraiSongsDetailActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:process=":webactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EventDetailActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.RadioDetailActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.QuizActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TempleListActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.SixTimePoojaDetailActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.AboutAppActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TamilKeyboardActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyFavouritesActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ThalamActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CountryActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ThirumuraiSearchActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label=""
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".activities.ThirumuraiSearchActivity" />
+        </activity>
+
+        <service
+            android:name=".keyboard.TamilSoftKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+        <service android:name=".service.MusicService" />
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".broadcastReceivers.AlarmReceiver"
+            android:icon="@mipmap/ic_launcher"
+            android:process=":remote" />
+        <receiver
+            android:name=".broadcastReceivers.RadioAlarmReceiver"
+            android:icon="@mipmap/ic_launcher"
+            android:process=":remote" />
+        <receiver android:name=".broadcastReceivers.PhoneStateServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <activity android:name=".activities.WelcomeActivity"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0cc31c482e3cfc0b662afbcf8acbfba7e3c48ef6" />
+    </application>
+
+</manifest>

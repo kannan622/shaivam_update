@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/incorrect"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Note : Correct the information below"
+        android:layout_below="@+id/spinner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#ff9900"
+        android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:id="@+id/notemple"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Note : Please provide your contact number."
+        android:layout_below="@+id/spinner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#ff9900"
+        android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:id="@+id/inaccurate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Note : Kindly add exact temple location in Add Map"
+        android:layout_below="@+id/spinner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#ff9900"
+        android:visibility="invisible"
+
+        />
+
+    <EditText
+        android:id="@+id/details_incorrect_templename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inaccurate"
+        android:hint="Temple Name"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/details_incorrect_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_incorrect_templename"
+        android:hint="Enter Description"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <EditText
+        android:id="@+id/details_incorrect_mobileno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_incorrect_description"
+        android:hint="@string/mobno"
+
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/spinner"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16sdp"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvReport"
+            android:padding="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Feedback"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>

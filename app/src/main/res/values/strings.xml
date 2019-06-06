@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shaivam.org</string>
+
+
+    <string name="thiru_head">Thirumurai </string>
+    <string name="search">Search</string>
+    <string name="calander">Calendar</string>
+    <string name="event">Events</string>
+
+    <string name="temple">Temples</string>
+    <string name="nayanmargal">Radio </string>
+    <string name="others">6 Kaala Puja </string>
+    <string name="quiz">Quiz</string>
+
+    <string name="fm">FM Shaivam.org</string>
+    <string name="fm2">Shaiva Lahari</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="inindia">Shiva Temple in India</string>
+    <string name="outsideindia">Foreign Shiva Temple</string>
+    <string name="specialtemple">Special Temples</string>
+
+    <string name="thalamwise">தலம்</string>
+    <string name="countrywise">நாடு</string>
+    <string name="paadal">Songs</string>
+    <string name="paadal_varigal">Songs Lyrics</string>
+
+    <string name="refresh_map">To Get map points Click Refresh</string>
+
+    <string name="poojairemain">Puja Reminder</string>
+    <string name="puja_text">In temples following Shivagama, 6 time worship is offered. This feature will help in worshiping Lord Shiva in the abode of your heart, all those six times of the day.</string>
+
+    <string name="open">Open</string>
+    <string-array name="languages">
+        <item>Select language</item>
+        <item>தமிழ்</item>
+        <item>English</item>
+    </string-array>
+
+    <string name="cal">Calender</string>
+    <string name="eve">Events</string>
+
+    <string-array name="system">
+        <item>@string/eve</item>
+    </string-array>
+
+    <string name="addevents">Add Event</string>
+
+    <string name="kaalam">Kaalam</string>
+    <string name="off_on">OFF/ON</string>
+
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <string name="ushat"> Ushakkalam</string>
+    <string name="kaala">Kalasandi</string>
+    <string name="uchi">Uchikalam</string>
+    <string name="saya">Sayaraksha</string>
+    <string name="iranda">Dvitiyakalam</string>
+    <string name="ardha">Ardhajamam</string>&#160;
+
+    <string name="ushat_hindi"> ॐ\n\n
+
+कद्रु॒द्राय॒ प्रचे॓तसे मी॒ळुष्ट॑माय॒ तव्य॑से ।\n
+वो॒चेम॒ शन्त॑मम् हृ॒दे ॥\n\n
+
+ॐ</string>
+    <string name="kaala_hindi">ॐ\n\n
+
+त्र्य॑म्बकं यजामहॆ सु॒गन्धिं॑ पुष्टि॒वर्ध॑नम् ।\n
+उ॒र्वा॒रु॒कमि॑व॒ बन्ध॑नान्मृ॒त्यॊर्मु॑क्षीय॒ मामृतात्॑ ॥ ७.५९.१२ ॥\n\n
+
+ॐ</string>
+    <string name="uchi_hindi">ॐ\n\n
+
+नमः॒ सोमा॑य च रु॒द्राय॑ च॒ नम॑स्ता॒म्राय॑ चारु॒णाय॑ च॒\n
+नमः॑ श॒ङ्गाय॑ च पशु॒पत॑ये च॒ नम॑ उ॒ग्राय॑ च भी॒माय॑ च॒\n
+नमो॑ अग्रेव॒धाय॑ च दूरेव॒धाय॑ च॒ नमो॑ ह॒न्त्रे च॒ हनी॑यसे च॒\n
+नमो॑ वृ॒क्षेभ्यो॒ हरि॑केशेभ्यो॒ नम॑स्ता॒राय॒\n
+नम॑श्शं॒भवे॑ च मयो॒भवे॑ च॒ नमः॑ शंक॒राय॑ च मयस्क॒राय॑ च॒\n
+नमः॑ शि॒वाय॑  च शि॒वत॑राय च॒ नम॒स्तीर्थ्या॑य च॒ कूल्या॑य च॒\n
+नमः॑ पा॒र्या॑य चावा॒र्या॑य च॒ नमः॑ प्र॒तर॑णाय चो॒त्तर॑णाय च॒\n
+नम॑ आता॒र्या॑य चाला॒द्या॑य च॒ नमः॒ शष्प्या॑य च॒ फेन्या॑य च॒\n
+नमः॑ सिक॒त्या॑य च प्रवा॒ह्या॑य च ॥\n\n
+
+ॐ</string>
+    <string name="iranda_hindi">ॐ\n\n
+
+नम॑ः सा॒यं नम॑ः प्रा॒तर्नमो॒ रात्र्या॒ नमो॒ दिवा॑।\n
+भ॒वाय॑ च श॒र्वाय॑ चो॒भाभ्या॑मकर॒ं नम॑ः॥\n\n
+
+ॐ</string>
+    <string name="ardha_hindi">ॐ\n\n
+
+स्वस्तिप्रजाभ्यः परिपालयन्तां न्यायेन मार्गेण महीं महीशाः ।\n
+गोब्राह्मणेभ्यः शुभमस्तु नित्यं लोकाः समस्ताः सुखिनो भवन्तु ॥\n\n
+
+ॐ</string>&#160;
+
+    <string name="ushat_tamil">
+திருச்சிற்றம்பலம்\n\n
+
+போற்றியென் வாழ்முத லாகிய பொருளே\n
+புலர்ந்தது பூங்கழற் கிணைதுணை மலர்கொண்\n
+டேற்றிநின் திருமுகத் தெமக்கருள் மலரும்\n
+எழில்நகை கொண்டுநின் திருவடி தொழுகோம்\n
+சேற்றிதழ்க் கமலங்கள் மலரும்தண் வயல்சூழ்\n
+திருப்பெருந் துறை உறை சிவபெருமானே\n
+ஏற்றுயர் கொடியுடை யாய்எனை யுடையாய்\n
+எம்பெரு மான்பள்ளி யெழுந்தருளாயே.\n\n
+
+திருச்சிற்றம்பலம்</string>
+    <string name="kaala_tamil">உனக்குப் பணிசெய்ய உன்றனையெந் நாளும்\n
+நினைக்க வரமெனக்கு நீதா - மனக்கவலை\n
+நீக்குகின்ற தென்மதுரை நின்மலனே எவ்வுலகும்\n
+ஆக்குகின்ற சொக்கநா தா. </string>
+    <string name="uchi_tamil">திருச்சிற்றம்பலம்\n\n
+
+புழுவாய்ப் பிறக்கினும் புண்ணியா\n
+  &#160;&#160;வுன்னடி யென்மனத்தே\n
+வழுவா திருக்க வரந்தர\n
+  &#160;&#160;வேண்டுமிவ் வையகத்தே\n
+தொழுவார்க் கிரங்கி யிருந்தருள்\n
+  &#160;&#160;செய்பா திரிப்புலியூர்ச்\n
+செழுநீர்ப் புனற்கங்கை செஞ்சடை\n
+  &#160;&#160;மேல்வைத்த தீவண்ணனே.\n\n
+
+திருச்சிற்றம்பலம்</string>
+    <string name="saya_tamil">திருச்சிற்றம்பலம்\n\n
+
+இடரினுந் தளரினும் எனதுறுநோய்\n
+தொடரினும் உனகழல் தொழுதெழுவேன்\n
+கடல்தனில் அமுதொடு கலந்தநஞ்சை\n
+மிடறினில் அடக்கிய வேதியனே\n
+	&#160;&#160;&#160;இதுவோஎமை யாளுமா றீவதொன் றெமக்கில்லையேல்\n
+	&#160;&#160;&#160;அதுவோவுன தின்னருள் ஆவடு துறையரனே.\n\n
+
+திருச்சிற்றம்பலம்</string>
+    <string name="iranda_tamil">திருச்சிற்றம்பலம்\n\n
+
+குறைவிலா நிறைவே கோதிலா அமுதே\n
+ஈறிலாக் கொழுஞ்சுடர்க் குன்றே\n
+மறையுமாய் மறையின் பொருளுமாய் வந்தென்\n
+மனத்திடை மன்னிய மன்னே\n
+சிறைபெறா நீர்போல் சிந்தைவாய்ப்பாயும்\n
+திருப்பெருந்துறையுறை சிவனே\n
+இறைவனே நீயென் உடலிடங் கொண்டாய்\n
+இனியுன்னை யென்னிரக் கேனே.\n\n
+
+திருச்சிற்றம்பலம்</string>
+    <string name="ardha_tamil">திருச்சிற்றம்பலம்\n\n
+
+வாழ்க அந்தணர் வானவர் ஆனினம்\n
+வீழ்க தண்புனல் வேந்தனும் ஓங்குக\n
+ஆழ்க தீயதெல் லாம்அரன் நாமமே\n
+சூழ்க வையக முந்துயர் தீர்கவே.\n\n
+
+திருச்சிற்றம்பலம்</string>&#160;
+
+    <string name="ushat_hindi_last">(Rig Veda)</string>
+    <string name="kaala_hindi_last">(Rig Veda)</string>
+    <string name="uchi_hindi_last">(Yajur Veda)</string>
+    <string name="iranda_hindi_last">(Atharvana Veda)</string>
+    <string name="ardha_hindi_last">(Shanti Patha)</string>
+
+    <string name="ushat_tamil_last"> (08.20.01)</string>
+    <string name="kaala_tamil_last">(சொ.வெ)</string>
+    <string name="uchi_tamil_last">(04.94.08)</string>
+    <string name="saya_tamil_last">(03.04.01)</string>
+    <string name="iranda_tamil_last">(08.22.05)</string>
+    <string name="ardha_tamil_last">(03.54.01)</string>
+
+    <string name="ushat_time">06:00 AM</string>
+    <string name="kaala_time">08:00 AM</string>
+    <string name="uchi_time">12:00 PM</string>
+    <string name="saya_time">06:00 PM</string>
+    <string name="iranda_time">08:00 PM</string>
+    <string name="ardha_time">09:00 PM</string>
+
+    <string name="offline">Temples</string>
+    <string name="rating">Rating</string>
+    <string name="lang">Language</string>
+    <string name="tamilkey">Keyboard</string>
+    <string name="contactus">Contact</string>
+    <string name="About">About App</string>
+    <string name="home">Shaivam.org</string>
+    <string name="fav">My Favorites</string>
+    <string name="nav_database_update">Check Database Update</string>
+
+
+    <string name="dash">Home</string>
+
+
+    <string name="fm_new">24x7 Internet Radios</string>
+    <string name="mobno"><font color="red">*</font> Enter your mobile number.</string>
+
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+    <string name="choose_location">Choose the location</string>
+    <string name="pick_image">Pick this Temple\'s image</string>
+    <string name="text_enable_visai">change to Tamil Keyboard </string>
+    <string name="keyboard">2. Goto Settings >> Language  &amp; Inputs >> Keyboard &amp; Input Method (Current Keyboard) >> Choose "Shaivam.Org"</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Namahshivaya </string>
+    <string name="slide_1_desc">Welcome to the Shaivam.org Mobile App.</string>
+    <string name="slide_2_title">Key Features:</string>
+    <string name="appversion">App Version : 3.3</string>
+    <string name="slide_2_desc">1. Find the Shiva Temples around you, across the world.\n2. Read and listen to Thirumurai simultaneously.\n3. A handy calendarModel of festivals and shaivite events.\n4. Two 24x7 Radio services - Tamil and Multilingual.\n5. Prayer reminder for daily Anushtanam.\n6. Search and get anything in Shaivam.org through this App.
+You can use the App in English or Tamil (See settings)</string>
+    <string name="slide_3_title">Help us Serve</string>
+    <string name="slide_3_desc"> "Name of Hara Encompass; World be free from suffering" is our motto. If you like the service provided,\n\n1. Contribute events, temple information through the App or Shaivam.org\n2. If you are a Shaivite scholar, contribute lectures, songs, articles, art etc. to Shaivam.org and radio.\n3. Share about this App with your friends and through social media.\n4. Rate us in the AppStore
+This App is our offering in your spiritual journey.</string>
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="endless">Endless ListView</string>
+    <string name="loadmorebutton">Load More Button</string>
+    <string name="buttons">Paging Buttons</string>
+    <string name="display">Displaying %1$s of %2$s</string>
+    <string name="selected"> selected</string>
+    <string name="loadmore">Load More</string>
+    <string name="displayshort">%1$s - %2$s of %3$s</string>
+    <string name="first">first</string>
+    <string name="previous">prev</string>
+    <string name="last">last</string>
+    <string name="image">image</string>
+    <string name="test">test</string>
+
+
+    <string name="exit_app">Are you sure to Exit?</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="view">View</string>
+
+    <string name="search_hint">Search Temple</string>
+    <string name="search_hint_thirumurai">Search Thirumurai</string>
+    <string name="from_Date">From date</string>
+    <string name="to_date">To date</string>
+    <string name="go">Go</string>
+    <string name="clear">Clear</string>
+    <string name="action_share">Share</string>
+    <string name="action_nandhi">Settings</string>
+
+    <string name="panmurai">Panmurai</string>
+    <string name="thalamurai">Thalamurai</string>
+    <string name="akarathi">Akarathi</string>
+
+    <string name="aruliyavar">Aruliyavar</string>
+    <string name="pann">Pann</string>
+    <string name="nadu">Nadu</string>
+    <string name="thalam">Thalam</string>
+
+    <string name="albums">%s (albums: %d)</string>
+    <string name="unknown_year" translatable="false">N&#x2F;A</string>
+    <string name="no_eq">No equalizer found!</string>
+    <string name="bad_id">Play a song first!</string>
+    <string name="artist_info">&lt;b>Albums:&lt;/b>&#160;%1d&#160;&lt;b>Songs:&lt;/b>&#160;%2d</string>
+    <string name="track_title" translatable="false">&lt;b>%1d&lt;/b>&#160;%2s</string>
+    <string name="playing_song" translatable="false">&lt;b>%1s&lt;/b>&lt;br/>%2s</string>
+    <string name="no_browser">No browser found!</string>
+    <string name="perm_rationale">Kindly allow application to access Storage</string>
+    <string name="error_no_music">No Thirumurai Songs found!</string>
+
+    <string name="connection_message">No Internet Connection</string>
+    <string name="connection_message_audio">No Internet Connection - Audio will not play.</string>
+
+    <string name="location_title">Location Permission Required</string>
+    <string name="location_message">Kindly allow application to access Location</string>
+    <string name="location_mandatory">Location Access is mandary. Kindly go to settings and enable location permission.</string>
+
+    <string name="went_wrong">Went Wrong</string>
+
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="description">Description</string>
+    <string name="time">Time</string>
+    <string name="place">Place</string>
+    <string name="presenter">Presenter</string>
+    <string name="posted_by">Posted by</string>
+    <string name="internet_radio">24/7 - Internet radio</string>
+
+    <string name="lahari_radio_tilte">Shaiva Lahari</string>
+    <string name="lahari_radio_recent_tilte">Current Program:</string>
+
+    <string name="program_list">Program List</string>
+
+    <string name="artist">Artist</string>
+    <string name="category">Category</string>
+
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="add_temple">Add temple</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="submit">Submit</string>
+    <string name="prev"> Prev</string>
+    <string name="next"> Next</string>
+    <string name="got_it"> Got It</string>
+
+
+    <string name="email_id">Email Id : </string>
+    <string name="website">Website : </string>
+
+    <string name="database_success">Database Updated Successfully</string>
+    <string name="database_already_update">Database Already Updated</string>
+
+    <string name="from_date_mandatory">From Date is mandatory</string>
+    <string name="to_date_mandatory">To Date is mandatory</string>
+    <string name="to_date_greater_alert">To Date must be greater than or equal to the from date</string>
+
+    <string name="change_font_size">Change Song Font Size</string>
+
+
+    //from tamil.string file
+
+    <string name="fm1">திருநெறிய தமிழோசை</string>
+    <string name="thevaram">தேவாரம் (1&#8211;7) </string>
+    <string name="thiruvasagam">திருவாசகம் (8) </string>
+    <string name="thirukovaiyar">திருக்கோவையார் (8) </string>
+    <string name="thiruvisaipa">திருவிசைப்பா /திருப்பல்லாண்டு (9) </string>
+    <string name="thirumanthiram">திருமந்திரம் (10) </string>
+    <string name="prabandham">பதினோராம் திருமுறை (11) </string>
+    <string name="periyapuranam">பெரிய புராணம் (12) </string>
+    <string name="thirichitramplam">திருச்சிற்றம்பலம்</string>
+
+    <string name="tamil_radio_tilte">திருநெறிய தமிழோசை</string>
+    <string name="tamil_radio_recent_tilte">தற்போதைய நிகழ்ச்சி:</string>
+
+    <string name="add_temple_note">கவனிக்க: உங்களுடைய கோவில் இருப்பிடத்திற்கு புள்ளியை பொருத்தவும்</string>
+    <string name="add_temple_name">திருத்தலத்தின் பெயர்</string>
+    <string name="add_temple_description">விளக்கம்</string>
+
+    <string name="ime_name">Shaivam.org</string>
+
+    <string name="text_Header">தமிழ்விசை</string>
+    <string name="thamizha_txt">தமிழா!</string>
+    <string name="keyboard_layout_menu_header">Settings</string>
+    <string name="T99">தமிழ்99</string>
+    <string name="phonetic">உச்சரிப்பு - தமிழ் விசைகள்</string>
+    <string name="phonetic_eng">உச்சரிப்பு - ஆங்கில விசைகள்</string>
+    <string name="eng">English</string>
+    <string name="tamil">தமிழ்</string>
+
+    <string name="en">EN</string>
+    <string name="tn">TN</string>
+
+
+    <string name="input_method">input method</string>
+    <string name="thamizha_url">http://www.thamizha.com</string>
+    <string name="text_help_step_1"> * ஒரு டெக்ஸ்ட்பாக்ஸில்நீண்ட நேரம் அழுத்தவும்</string>
+    <string name="text_help_step_2"> * உள்ளீட்டு முறை தேர்வு செய்யுங்கள்</string>
+    <string name="text_help_step_3"> * Shaivam.org தேர்ந்தெடுக்கவும்.</string>
+
+    <string name="text_help_header">how to enable Shaivam.org Keyboard</string>
+    <string name="text_help_steps">
+    Android 2.1 and above : Goto Settings -&gt; Languages &amp; Keyboards and tick Shaivam.org Keyboard \nAndroid 1.6 : Goto Settings -&gt; Locale &amp; Text and tick Shaivam.org Keyboard\n\n
+	Long press in a text box and choose Input Method and then select Shaivam.org Keyboard.
+    </string>
+
+    <string name="cannot_open_file">Cannot able to open File Chooser</string>
+    <string name="upload_failed">Cannot able to Upload Image</string>
+    <string name="alarm_received">Reminder to listen to your favorite radio program!</string>
+    <string name="select_tamil">You have selected Tamil</string>
+    <string name="select_english">You have selected English</string>
+    <string name="select_answer">"Kindly select any answer"</string>
+    <string name="device_alert">"This device is not supported."</string>
+    <string name="cannot_fetch_loc">"Cannot Fetch Location"</string>
+    <string name="no_thirumurai">"No Thriumurais are Found"</string>
+    <string name="no_songs_found">No Songs are Found</string>
+    <string name="no_temple">"No Temples are Found"</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="need_database_update">Do you want to update Database?</string>
+
+
+    <string name="add_fav">Add to favourite!</string>
+    <string name="add_fav_message">This song added as your Favorites.</string>
+    <string name="remove_fav">Remove from Favourite!</string>
+    <string name="remove_fav_message">This song removerd from your Favorites.</string>
+
+    <string name="image_added_message">Image picked Successfully. Kindly fetch location to add temple!</string>
+    <string name="temple_name_mandatory">Kindly fill temple name field</string>
+    <string name="temple_description_mandatory">Kindly fill temple description field</string>
+    <string name="image_picked_mandatory">Kindly select any image to add.</string>
+
+    <string name="search_length">Search key should be greater than 2 character.</string>
+
+
+    <string name="thiruvisaipa_title">திருவிசைப்பா</string>
+    <string name="thirupalandu_title">திருப்பல்லாண்டு</string>
+
+    <string name="app_Language">Select your language</string>
+
+    <string name="view_location_map">View Temple in Map</string>
+    <string name="incorrect_loc">Incorrect Location</string>
+</resources>

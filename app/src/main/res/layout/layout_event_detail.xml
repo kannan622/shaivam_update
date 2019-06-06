@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/dark_Gray_2"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context=".activities.EventDetailActivity"
+              tools:showIn="@layout/activity_event_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_Gray_1"
+        android:elevation="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/calander"
+            android:textAlignment="center"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/title_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+    <org.shaivam.utils.MyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/background_song_details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/start_date_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/start_date_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/start_date"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/start_date_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/end_date_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/end_date_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/end_date_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/end_date"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/end_date_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/end_date_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/description_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/description_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/description"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/description_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/description_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/time_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/time_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/time"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/time_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/time_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/place_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/place_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/place"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/place_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/place_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/presenter_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/presenter_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/presenter"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/presenter_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/presenter_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/posted_by_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/posted_by_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/category"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/posted_by_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/audiio_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/audiio_by_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/audiio_by_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/audio"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/audiio_by_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/video_vertical_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/adapter_child_view"
+                android:padding="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:id="@+id/video_by_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/video_by_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/video"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/video_by_direction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </org.shaivam.utils.MyNestedScrollView>
+
+</LinearLayout>

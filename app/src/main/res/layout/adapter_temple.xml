@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/temple_list_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/temple_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/temple_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_temple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temple_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            app:layout_constraintLeft_toRightOf="@+id/temple_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/temple_location_linear"/>
+
+        <LinearLayout
+            android:id="@+id/temple_location_linear"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/temple_view"
+            app:layout_constraintLeft_toRightOf="@+id/temple_image"
+            app:layout_constraintTop_toBottomOf="@+id/temple_text">
+
+            <ImageView
+                android:id="@+id/location_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+               android:src="@drawable/ic_events_location" />
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/_8sdp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/temple_view"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_height="1dp"
+            android:background="@color/background_Gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/temple_image"
+            app:layout_constraintTop_toBottomOf="@+id/temple_location_linear"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

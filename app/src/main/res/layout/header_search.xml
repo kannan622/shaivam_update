@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background_Gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_search"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_weight="5"
+                android:background="@drawable/background_search"
+                android:drawableLeft="@drawable/ic_search_toolbar"
+                android:textColorHint="@color/text_grey"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="@dimen/_4sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"/>
+
+            <Button
+                android:id="@+id/search_clear_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/clear"
+                android:elevation="1dp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/background_button"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

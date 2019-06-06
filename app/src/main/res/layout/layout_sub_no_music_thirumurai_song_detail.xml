@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_music_main_linear"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingLeft="@dimen/_16sdp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.ThirumuraiSongsDetailActivity"
+    tools:showIn="@layout/layout_thirumurai_song_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_song_details"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/no_music_play_previous"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/prev"
+                android:contentDescription="@string/app_name"
+                android:drawableLeft="@drawable/ic_previous_yellow" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/dark_Gray_2" />
+
+           <ImageView
+                android:id="@+id/no_music_bookmark"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_bookmark" />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/dark_Gray_2" />
+
+            <TextView
+                android:id="@+id/no_music_play_next"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="@dimen/_8sdp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:contentDescription="@string/app_name"
+                android:drawableRight="@drawable/ic_next_yellow" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

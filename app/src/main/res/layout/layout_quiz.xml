@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                            tools:context=".activities.QuizActivity"
+                                            tools:showIn="@layout/activity_quiz">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/answer_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:background="@color/correct_color_light"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/correct"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.FontPath_Latto"
+            android:textColor="@color/correct_color_dark"
+            android:textSize="@dimen/_14sdp"/>
+
+        <FrameLayout
+            android:id="@+id/recycle_quiz_list_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:background="@color/bg_white"
+            android:descendantFocusability="beforeDescendants"
+            android:isScrollContainer="false"
+            android:paddingTop="@dimen/_2sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answer_status">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_280sdp"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/correct_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/correct"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.FontPath_Latto"
+            android:textColor="@color/correct_color_dark"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycle_quiz_list_scroll"/>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/button_border"
+            android:singleLine="true"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.FontPath_Latto"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correct_answer"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/button_border_grey"
+            android:singleLine="true"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.FontPath_Latto"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit"/>
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/button_border_grey"
+            android:singleLine="true"
+            android:text="@string/prev"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.FontPath_Latto"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/next"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

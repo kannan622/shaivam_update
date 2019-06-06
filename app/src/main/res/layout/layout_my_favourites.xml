@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.MyFavouritesActivity"
+    tools:showIn="@layout/activity_my_favourites">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_song_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:background="@color/bg_white"
+            android:descendantFocusability="beforeDescendants"
+            android:isScrollContainer="false"
+            android:paddingTop="@dimen/_2sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

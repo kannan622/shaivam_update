@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_song_details"
+    android:elevation="@dimen/_4sdp"
+    android:padding="@dimen/_16sdp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_song_details">
+
+        <ImageView
+            android:id="@+id/add_temple_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/add_temple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:singleLine="true"
+            android:text="@string/add_temple"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/add_temple_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/add_temple_note"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_temple" />
+
+        <EditText
+            android:id="@+id/add_temple_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/border_edit_text"
+            android:hint="@string/add_temple_name"
+            android:padding="@dimen/_4sdp"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_temple_note" />
+
+        <EditText
+            android:id="@+id/add_temple_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/border_edit_text"
+            android:hint="@string/add_temple_description"
+            android:padding="@dimen/_4sdp"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_temple_name" />
+
+        <LinearLayout
+            android:id="@+id/add_temple_capture_image_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_temple_description">
+
+            <Button
+                android:id="@+id/add_temple_pick_image"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/colorPrimary"
+                android:singleLine="true"
+                android:text="@string/pick_image"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/_10sdp" />
+            <ImageView
+                android:id="@+id/add_temple_capture_image"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:tint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+               android:src="@drawable/picker_icon_camera" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/add_temple_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorPrimary"
+            android:singleLine="true"
+            android:text="@string/choose_location"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_temple_capture_image_linear" />
+
+        <Button
+            android:id="@+id/add_temple_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/tab_text_grey"
+            android:singleLine="true"
+            android:text="@string/Cancel"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_temple_send" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
